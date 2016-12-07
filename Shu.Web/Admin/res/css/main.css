@@ -1,0 +1,44 @@
+﻿body.f-body {
+    height: auto;
+    /*background-image: url(../images/square.gif);*/
+    padding: 10px;
+}
+
+    body.f-body.f-theme-access {
+        background-image: none;
+    }
+
+.marginr {
+    margin-right: 5px;
+}
+
+.formitem {
+    margin-bottom: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+ol.result {
+    list-style-type: decimal;
+    margin: 10px 0 10px 25px;
+}
+
+table.result {
+    margin: 10px 0;
+    width: 500px;
+}
+
+    table.result th {
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    table.result td, table.result th {
+        border-bottom: solid 1px #efefef;
+        padding: 5px;
+        text-align: left;
+    }
+
+

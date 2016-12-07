@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2A757D8-F5C6-4497-AE51-DFEEE6C6BA6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shu.Model</RootNamespace>
+    <AssemblyName>Shu.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GetChildID_ADClass_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetChildID_AdminRole_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetChildID_DownloadClass_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetChildID_LinkClass_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetChildID_NewsClass_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetChildID_ProductClass_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetChildID_VideoClass_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetParentID_AdminRole_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetParentID_NewsClass_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetParentID_ProductClass_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSequenceNumber_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTreeID_AdminRole_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_AD.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_ADClass.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Admin.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_AdminAction.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_AdminModule.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_AdminRole.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_AdminRoleMenu.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_AdminRoleModule.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_AdminRoleTable.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Candidates.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Config.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Department.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Dept.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Download.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_DownloadClass.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Express.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_FileUrl.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_JobTitle.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Link.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_LinkClass.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Log.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Login.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_MailTemplate.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Menu.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_MenuPageRelation.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_ModuleAction.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_News.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_NewsClass.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Online.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_OnlineMessage.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Order.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_OrderDetail.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Payment.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Product.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_ProductAttribute.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_ProductAttributeClass.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_ProductClass.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_ProductGoods.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_ProductSpec.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_RecommendPosition.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Recruitment.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_RelationAttributeTable.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_ReWrite.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_RSS.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Spec.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Stat.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Survey.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_SurveyClass.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_SurveyItem.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_SurveyOption.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_SurveyUser.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_SurveyUserOption.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Tags.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Topic.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_TopicPart.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_TopicPartContent.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_User.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_UserAddress.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_UserFavorite.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_UserGroup.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_UserSpread.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_UserSpreadEffect.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_User_Oauth.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_User_Oauth_App.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Video.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MS_VideoClass.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SequenceNumber.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shu.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shu.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shu.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FindColumnInDB_Result.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_MS_AD.cs">
+      <DependentUpon>Shu.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Shu.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Shu.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="Shu.edmx.diagram">
+      <DependentUpon>Shu.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Shu.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Shu.edmx</DependentUpon>
+      <LastGenOutput>Shu.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Shu.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Shu.edmx</DependentUpon>
+      <LastGenOutput>Shu.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
